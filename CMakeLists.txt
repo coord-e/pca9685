@@ -26,5 +26,8 @@ endif()
 
 include_directories(include/)
 
+find_package(servoarray 0.1 REQUIRED)
+include_directories(${SERVOARRAY_INCLUDE_DIR})
+
 add_subdirectory(lib)
 add_subdirectory(bin)
